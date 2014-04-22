@@ -17,42 +17,6 @@
     jobs:
       - '{name}'
 
-# CirrusSearch
-
-## en.wikipedia.beta.wmflabs.org
-
-- project:
-    name: CirrusSearch-en.wikipedia.beta.wmflabs.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WMFLABS_ORG
-    mediawiki_url: en.wikipedia.beta.wmflabs.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org neverett@wikimedia.org
-    repository: mediawiki/extensions/CirrusSearch
-    version: 27
-
-    jobs:
-      - '{name}'
-
-## test2.wikipedia.org
-
-- project:
-    name: CirrusSearch-test2.wikipedia.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WIKIPEDIA_ORG
-    mediawiki_url: test2.wikipedia.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org neverett@wikimedia.org
-    repository: mediawiki/extensions/CirrusSearch
-    version: 27
-
-    jobs:
-      - '{name}'
-
 # ContentTranslation
 
 ## language-stage.wmflabs.org
@@ -255,80 +219,9 @@
     jobs:
       - '{name}'
 
-# TwnMainPage
-
-## sandbox.translatewiki.net
-
-- project:
-    name: TwnMainPage-sandbox.translatewiki.net-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_SANDBOX_TRANSLATEWIKI_NET
-    mediawiki_url: sandbox.translatewiki.net
-    mediawiki_user: Selenium
-    platform: Linux
-    recipients: aaharoni@wikimedia.org cmcmahon@wikimedia.org nlaxstrom@wikimedia.org
-    repository: mediawiki/extensions/TwnMainPage
-    version: 27
-
-    jobs:
-      - '{name}'
-
-# Translate
-
-## meta.wikimedia.org
-
-- project:
-    name: Translate-meta.wikimedia.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_SANDBOX_TRANSLATEWIKI_NET
-    mediawiki_url: meta.wikimedia.org
-    mediawiki_user: Selenium
-    platform: Linux
-    recipients: aaharoni@wikimedia.org cmcmahon@wikimedia.org nlaxstrom@wikimedia.org
-    repository: mediawiki/extensions/Translate
-    version: 27
-
-    jobs:
-      - '{name}'
-
-## sandbox.translatewiki.net
-
-- project:
-    name: Translate-sandbox.translatewiki.net-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_TRANSLATE_SANDBOX_TRANSLATEWIKI_NET
-    mediawiki_url: sandbox.translatewiki.net
-    mediawiki_user: Selenium-Translate
-    platform: Linux
-    recipients: aaharoni@wikimedia.org cmcmahon@wikimedia.org nlaxstrom@wikimedia.org
-    repository: mediawiki/extensions/Translate
-    version: 27
-
-    jobs:
-      - '{name}'
-
-
 # UniversalLanguageSelector
 
 ## commons.wikimedia.beta.wmflabs.org
-
-- project:
-    name: UniversalLanguageSelector-commons.wikimedia.beta.wmflabs.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_ULS_WMFLABS_ORG
-    mediawiki_url: commons.wikimedia.beta.wmflabs.org
-    mediawiki_user: Uls
-    platform: Linux
-    recipients: aaharoni@wikimedia.org cmcmahon@wikimedia.org kmistry@wikimedia.org nlaxstrom@wikimedia.org sthottingal@wikimedia.org
-    repository: mediawiki/extensions/UniversalLanguageSelector
-    version: 27
-
-    jobs:
-      - '{name}'
 
 - project:
     name: UniversalLanguageSelector-commons.wikimedia.beta.wmflabs.org-windows-internet_explorer_10
@@ -361,23 +254,6 @@
 
     jobs:
       - 'UniversalLanguageSelector-{name}'
-
-## sandbox.translatewiki.net
-
-- project:
-    name: UniversalLanguageSelector-sandbox.translatewiki.net-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_SANDBOX_TRANSLATEWIKI_NET
-    mediawiki_url: sandbox.translatewiki.net
-    mediawiki_user: Selenium
-    platform: Linux
-    recipients: aaharoni@wikimedia.org cmcmahon@wikimedia.org kmistry@wikimedia.org nlaxstrom@wikimedia.org sthottingal@wikimedia.org
-    repository: mediawiki/extensions/UniversalLanguageSelector
-    version: 27
-
-    jobs:
-      - '{name}'
 
 # UploadWizard-commons.wikimedia.beta.wmflabs.org-linux-chrome
 
@@ -474,21 +350,6 @@
 - project:
     name: VisualEditor-en.wikipedia.beta.wmflabs.org-linux-chrome
     browser: chrome
-    folder: modules/ve-mw/test
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WMFLABS_ORG
-    mediawiki_url: en.wikipedia.beta.wmflabs.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org jforrester@wikimedia.org
-    repository: mediawiki/extensions/VisualEditor
-    version: 27
-
-    jobs:
-      - '{name}'
-
-- project:
-    name: VisualEditor-en.wikipedia.beta.wmflabs.org-linux-firefox
-    browser: firefox
     folder: modules/ve-mw/test
     mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WMFLABS_ORG
     mediawiki_url: en.wikipedia.beta.wmflabs.org
