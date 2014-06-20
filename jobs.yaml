@@ -1,22 +1,3 @@
-# CentralAuth
-
-## test2.wikipedia.org
-
-- project:
-    name: CentralAuth-test2.wikipedia.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WIKIPEDIA_ORG
-    mediawiki_url: test2.wikipedia.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org csteipp@wikimedia.org
-    repository: mediawiki/extensions/CentralAuth
-    version: 27
-
-    jobs:
-      - '{name}'
-
 # Flow
 
 ## en.wikipedia.beta.wmflabs.org
@@ -241,57 +222,6 @@
 
     jobs:
       - 'VisualEditor-{name}'
-
-## test2.wikipedia.org
-
-- project:
-    name: VisualEditor-test2.wikipedia.org-linux-chrome
-    browser: chrome
-    folder: modules/ve-mw/test
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WIKIPEDIA_ORG
-    mediawiki_url: test2.wikipedia.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org jforrester@wikimedia.org
-    repository: mediawiki/extensions/VisualEditor
-    version: 27
-
-    jobs:
-      - '{name}'
-
-- project:
-    name: VisualEditor-test2.wikipedia.org-linux-firefox
-    browser: firefox
-    folder: modules/ve-mw/test
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WIKIPEDIA_ORG
-    mediawiki_url: test2.wikipedia.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org jforrester@wikimedia.org
-    repository: mediawiki/extensions/VisualEditor
-    version: 27
-
-    jobs:
-      - '{name}'
-
-# WikiLove
-
-## en.wikipedia.beta.wmflabs.org
-
-- project:
-    name: WikiLove-en.wikipedia.beta.wmflabs.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WMFLABS_ORG
-    mediawiki_url: en.wikipedia.beta.wmflabs.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org
-    repository: mediawiki/extensions/WikiLove
-    version: 27
-
-    jobs:
-      - '{name}'
 
 # browsertests
 
