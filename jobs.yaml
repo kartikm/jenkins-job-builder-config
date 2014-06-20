@@ -207,22 +207,6 @@
     jobs:
       - '{name}'
 
-# VisualEditor
-
-## production
-
-- project:
-    name: production-linux-firefox
-    browser: firefox
-    folder: modules/ve-mw/test
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org jforrester@wikimedia.org
-    repository: mediawiki/extensions/VisualEditor
-    version: 27
-
-    jobs:
-      - 'VisualEditor-{name}'
-
 # browsertests
 
 ## en.wikipedia.beta.wmflabs.org

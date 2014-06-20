@@ -239,43 +239,6 @@
           DEV/bin/python tests/api/upload-wizard_tests.py --username "{mediawiki_user}" --api_url "http://{mediawiki_url}/w/api.php"
           DEV/bin/python tests/api/upload-wizard_tests.py --gen_new_image --username "{mediawiki_user}" --api_url "http://{mediawiki_url}/w/api.php"
 
-# VisualEditor
-
-- job-template:
-    name: 'VisualEditor-{name}'
-
-    triggers:
-      - timed: "@weekly"
-
-    builders:
-      - VisualEditor:
-          browser: '{browser}'
-          folder: '{folder}'
-          platform: '{platform}'
-          version: '{version}'
-
-- builder:
-    name: VisualEditor
-    builders:
-      - shell: |
-          # set up environment variables
-          export BROWSER={browser}
-          export PLATFORM='{platform}'
-          export VERSION={version}
-
-          # install ruby
-          curl -s -o use-ruby https://repository-cloudbees.forge.cloudbees.com/distributions/ci-addons/ruby/use-ruby
-          RUBY_VERSION=2.1.1 \
-            source ./use-ruby
-
-          # install ruby dependencies
-          gem install bundler --no-ri --no-rdoc
-          cd {folder}/browser/
-          bundle install
-
-          # run tests
-          bundle exec cucumber --backtrace --verbose --format pretty --format Cucumber::Formatter::Sauce --out reports/junit features/verify_production_wikis.feature || (echo -e "\nJob has failed (exit code: $?)."; false)
-
 # browsertests
 
 - job-template:
