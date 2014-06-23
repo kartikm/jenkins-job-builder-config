@@ -112,36 +112,6 @@
 ## commons.wikimedia.beta.wmflabs.org
 
 - project:
-    name: UploadWizard-commons.wikimedia.beta.wmflabs.org-linux-chrome
-    browser: chrome
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WMFLABS_ORG
-    mediawiki_url: commons.wikimedia.beta.wmflabs.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org
-    repository: mediawiki/extensions/UploadWizard
-    version: 27
-
-    jobs:
-      - '{name}'
-
-- project:
-    name: UploadWizard-commons.wikimedia.beta.wmflabs.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WMFLABS_ORG
-    mediawiki_url: commons.wikimedia.beta.wmflabs.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: cmcmahon@wikimedia.org
-    repository: mediawiki/extensions/UploadWizard
-    version: 27
-
-    jobs:
-      - '{name}'
-
-- project:
     name: UploadWizard-commons.wikimedia.beta.wmflabs.org-windows-internet_explorer_10
     browser: internet_explorer
     folder: tests
