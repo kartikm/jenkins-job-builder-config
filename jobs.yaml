@@ -64,25 +64,6 @@
     jobs:
       - '{name}'
 
-# MultimediaViewer
-
-## en.wikipedia.beta.wmflabs.org
-
-- project:
-    name: MultimediaViewer-en.wikipedia.beta.wmflabs.org-linux-firefox
-    browser: firefox
-    folder: tests
-    mediawiki_password_variable: MEDIAWIKI_PASSWORD_SELENIUM_USER_WMFLABS_ORG
-    mediawiki_url: en.wikipedia.beta.wmflabs.org
-    mediawiki_user: Selenium_user
-    platform: Linux
-    recipients: multimedia-alerts@lists.wikimedia.org
-    repository: mediawiki/extensions/MultimediaViewer
-    version: 27
-
-    jobs:
-      - '{name}'
-
 # UploadWizard-commons.wikimedia.beta.wmflabs.org-linux-chrome
 
 ## API
